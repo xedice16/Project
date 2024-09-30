@@ -1,17 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    /* font-family: Roboto, serif; */
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+header {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 21px;
+  padding-bottom: 30px;
+}
+header img {
+  width: 112px;
+  height: 66px;
+  padding-bottom: 70px;
+}
+nav {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+nav .date {
+    margin-right: 25px;
+    font-size: 20px;
+}
+.kino {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.kino.left {
+    width: 50%;
+}
+.kino .left h1 {
+    width: 100%;
+    font-size: 69px;
+    font-family: "Roboto Slab", serif;
+    line-height: 81.11px;
+    margin-bottom: 20px;
+}
+.kino.left p{
+    font-size: 20px;
+    width: 414px;
+    height: 62px;
+    line-height: 30px;
+}
+.kino .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.kino .right img {
+    width: 304px;
+    height: 356px;
+}
+ .bottom {
+    border: 1px solid #1d4681;
+    border-radius: 4px;
+    background-color: #1d4681;
+    color: #fff;
+    padding: 20px;
+    width: 400px;
+}
+.bottom p {
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32.5px;
+}
+ .bottom span {
+    width: 100%;
+    display: block;
+    text-align: end;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    line-height: 26px;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-    margin: 0 auto;
-    background-color: #f4f4f9;
-    padding: 20px;
-}
 
 h1 {
     font-size: 2.5em;
