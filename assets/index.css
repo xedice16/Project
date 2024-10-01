@@ -1,37 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    /* font-family: Roboto, serif; */
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
-
-body {
-    font-family: "Roboto", sans-serif;
+section {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.container {
+    width: 85%;
     margin: 0 auto;
-    background-color: #f4f4f9;
+}
+header {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 21px;
+  padding-bottom: 30px;
+}
+header img {
+  width: 112px;
+  height: 66px;
+  padding-bottom: 70px;
+}
+nav {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+nav .date {
+    margin-right: 25px;
+    font-size: 20px;
+}
+.kino {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.kino.left {
+    width: 50%;
+}
+.kino .left h1 {
+    width: 100%;
+    font-size: 69px;
+    font-family: "Roboto Slab", serif;
+    line-height: 81.11px;
+    margin-bottom: 20px;
+}
+.kino.left p{
+    font-size: 20px;
+    width: 414px;
+    height: 62px;
+    line-height: 30px;
+}
+.kino .right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.kino .right img {
+    width: 304px;
+    height: auto;
+    object-fit:contain;
+}
+ .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.bottom .items {
+    border: 1px solid #1d4681;
+    border-radius: 4px;
+    background-color: #1d4681;
+    color: #fff;
     padding: 20px;
 }
-
-h1 {
+.bottom p {
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32.5px;
+}
+ .bottom span {
+    width: 100%;
+    display: block;
+    text-align: end;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    line-height: 26px;
+}
+.card-head {
     font-size: 2.5em;
     text-align: left;
     margin-bottom: 40px;
-    margin-left: 200px;
-}
+  }
 
 .card-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+
+  }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 41px;
     column-gap: 37px;
-}
+    width: 90em;
+  }
 
 .card {
     max-width: 399px;
@@ -43,45 +123,83 @@ h1 {
     text-align: left;
     transition: transform 0.3s ease-in-out;
     /* filter: drop-shadow(10px 0px 5px #808088); */
-}
+  }
 
 .card img {
     width: 100%;
     height: auto;
     max-height: 150px;
     margin-bottom: 15px;
-}
+   }
 
 .card:hover {
     transform: translateY(-10px);
-}
+   }
 
-h2 {
+.card-h2 {
     font-size: 1.6em;
-    margin-bottom: 10px;
-}
+    margin-top: -20px;
+    margin-bottom: 35px;
+   }
 
-p {
-    font-family: Roboto, serif;
+.card-para {
+    font-family: "Roboto", sans-serif;
     font-size: 1em;
     color: black;
-    font-weight: 450;
-}
+    font-weight: 650;
 
-span {
+   }
+
+.card_span {
     display: flex;
     flex-direction: column;
     margin: 10px;
-}
+   }
 
-/* @media screen and (max-width: 834px) {
+@media (max-width:375px) {
+    nav .date {
+        font-size: 12px;
+    }
+    .kino {
+        display: block;
+    }
+    .kino .left {
+        width: 100%;
+    }
+    .kino .left h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .kino .left p {
+        margin-bottom: 20px;
+  }
+      .kino .right {
+        width: 100%;
+    }
+    .bottom {
+        width: 80%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .bottom p,span {
+        font-size: 14px;
+        line-height: 20px;
+    }
     .cards {
         display: flex;
         flex-direction: column;
-        width: fit-content;
     }
-} */
-    
+
+    .card-head {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        height: auto;
+    }
+}   
 @media screen and (min-width: 375px) and (max-width: 834px){
     .cards {
         display: grid;
@@ -91,34 +209,26 @@ span {
         row-gap: 26px;
     }
 
-    h1 {
+    .card-head {
         margin-left: 21px ;
         margin-bottom: 73px;
         font-size: 32px;
     }
 
-    h2 {
+    .card-h2 {
         font-size: 17px;
     }
 
-    p {
+    .card-para {
         font-size: 14px;
     }
-
-    .card {
-        height: 190px; 
-        padding-bottom: 16px;
-    }
-}
-
-@media screen and (max-width:375px){
-    .cards {
-        display: flex;
-        flex-direction: column;
-    }
-
-    h1 {
+    .card-head {
         margin: 0 auto;
         margin-bottom: 20px;
     }
+
+    .card {
+        height: auto;
+    }  
 }
+
