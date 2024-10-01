@@ -84,17 +84,18 @@ nav .date {
 }
 
 
-h1 {
+.card-head {
     font-size: 2.5em;
     text-align: left;
     margin-bottom: 40px;
-    margin-left: 200px;
+    margin-left: 300px;
 }
 
 .card-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .cards {
@@ -102,6 +103,7 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 41px;
     column-gap: 37px;
+    width: 90em;
 }
 
 .card {
@@ -127,16 +129,17 @@ h1 {
     transform: translateY(-10px);
 }
 
-h2 {
+.card-h2 {
     font-size: 1.6em;
     margin-bottom: 10px;
 }
 
-p {
+.card-para {
     font-family: Roboto, serif;
     font-size: 1em;
     color: black;
-    font-weight: 450;
+    font-weight: 650;
+
 }
 
 span {
@@ -162,17 +165,17 @@ span {
         row-gap: 26px;
     }
 
-    h1 {
+    .card-head {
         margin-left: 21px ;
         margin-bottom: 73px;
         font-size: 32px;
     }
 
-    h2 {
+    .card-h2 {
         font-size: 17px;
     }
 
-    p {
+    .card-para {
         font-size: 14px;
     }
 
@@ -188,8 +191,14 @@ span {
         flex-direction: column;
     }
 
-    h1 {
+    .card-head {
         margin: 0 auto;
         margin-bottom: 20px;
     }
+
+    .card {
+        height: auto;
+    } 
+    
+    
 }
