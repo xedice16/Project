@@ -3,5 +3,131 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    font-family: "Roboto Slab", serif;
+    /* font-family: Roboto, serif; */
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+.card-head {
+    font-size: 2.5em;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 300px;
+}
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 41px;
+    column-gap: 37px;
+    width: 90em;
+}
+
+.card {
+    max-width: 399px;
+    height: 18em;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+    /* padding: 10px; */
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    /* filter: drop-shadow(10px 0px 5px #808088); */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.card-para {
+    font-family: Roboto, serif;
+    font-size: 1em;
+    color: black;
+    font-weight: 650;
+
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/* @media screen and (max-width: 834px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+} */
+    
+@media screen and (min-width: 375px) and (max-width: 834px){
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* max-width: 231px; */
+        column-gap: 21px;
+        row-gap: 26px;
+    }
+
+    .card-head {
+        margin-left: 21px ;
+        margin-bottom: 73px;
+        font-size: 32px;
+    }
+
+    .card-h2 {
+        font-size: 17px;
+    }
+
+    .card-para {
+        font-size: 14px;
+    }
+
+    .card {
+        height: 190px; 
+        padding-bottom: 16px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-head {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        height: auto;
+    } 
+    
+    
 }
