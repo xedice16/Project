@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 * {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    /* font-family: Roboto, serif; */
 }
 .container {
     width: 85%;
@@ -92,18 +92,15 @@ nav .date {
     line-height: 26px;
 }
 .card-head {
-    font-size: 2.5em;
+      font-size: 2.5em;
     text-align: left;
     margin-bottom: 40px;
 }
-
 .card-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
-
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -144,11 +141,7 @@ nav .date {
 .card-para {
     font-family: "Roboto", sans-serif;
     font-size: 1.4em;
-    color: black;
-    font-weight: 400;
-    margin-top: 20px;
 }
-
 .card_span {
     display: flex;
     flex-direction: column;
@@ -200,8 +193,9 @@ nav .date {
     .card {
         height: auto;
     }
-}
-@media screen and (min-width: 375px) and (max-width: 834px) {
+}    
+@media screen and (min-width: 375px) and (max-width: 834px){
+
     .cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
