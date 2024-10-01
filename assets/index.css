@@ -54,19 +54,23 @@ nav .date {
 .kino .right {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .kino .right img {
     width: 304px;
     height: 356px;
 }
  .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bottom .items {
     border: 1px solid #1d4681;
     border-radius: 4px;
     background-color: #1d4681;
     color: #fff;
     padding: 20px;
-    width: 400px;
 }
 .bottom p {
     font-family: "Roboto Slab", serif;
@@ -83,19 +87,47 @@ nav .date {
     line-height: 26px;
 }
 
+@media (max-width:375px) {
+    nav .date {
+        font-size: 12px;
+    }
+    .kino {
+        display: block;
+    }
+    .kino .left {
+        width: 100%;
+    }
+    .kino .left h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .kino .left p {
+        margin-bottom: 20px;
+  }
+      .kino .right {
+        width: 100%;
+    }
+    .bottom {
+        width: 300px;
+        margin-top: 20px;
+    }
+    .bottom p,span {
+        font-size: 14px;
+        line-height: 20px;
+    }
 
 .card-head {
     font-size: 2.5em;
     text-align: left;
     margin-bottom: 40px;
-}
+  }
 
 .card-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-}
+  }
 
 .cards {
     display: grid;
@@ -103,7 +135,7 @@ nav .date {
     row-gap: 41px;
     column-gap: 37px;
     width: 90em;
-}
+  }
 
 .card {
     max-width: 399px;
@@ -115,23 +147,23 @@ nav .date {
     text-align: left;
     transition: transform 0.3s ease-in-out;
     /* filter: drop-shadow(10px 0px 5px #808088); */
-}
+  }
 
 .card img {
     width: 100%;
     height: auto;
     max-height: 150px;
     margin-bottom: 15px;
-}
+   }
 
 .card:hover {
     transform: translateY(-10px);
-}
+   }
 
 .card-h2 {
     font-size: 1.6em;
     margin-bottom: 10px;
-}
+   }
 
 .card-para {
     font-family: Roboto, serif;
@@ -139,14 +171,14 @@ nav .date {
     color: black;
     font-weight: 650;
 
-}
+   }
 
 .card_span {
     display: flex;
     flex-direction: column;
     margin: 10px;
-}
-    
+   }
+}   
 @media screen and (min-width: 375px) and (max-width: 834px){
     .cards {
         display: grid;
@@ -169,19 +201,6 @@ nav .date {
     .card-para {
         font-size: 14px;
     }
-
-    .card {
-        height: 190px; 
-        padding-bottom: 16px;
-    }
-}
-
-@media screen and (max-width:375px){
-    .cards {
-        display: flex;
-        flex-direction: column;
-    }
-
     .card-head {
         margin: 0 auto;
         margin-bottom: 20px;
@@ -189,7 +208,6 @@ nav .date {
 
     .card {
         height: auto;
-    } 
-    
-    
+    }  
 }
+
