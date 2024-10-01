@@ -69,19 +69,11 @@ body {
 
 }
 
-span {
+.card_span {
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
-
-/* @media screen and (max-width: 834px) {
-    .cards {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-    }
-} */
     
 @media screen and (min-width: 375px) and (max-width: 834px){
     .cards {
