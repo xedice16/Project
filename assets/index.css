@@ -3,5 +3,16 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    list-style: none;
     font-family: "Roboto Slab", serif;
+}
+.list_items h1{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.list_items ul li{
+    font-family: "Roboto", sans-serif;
+    list-style: disc;
+    font-size: 14px;
+    line-height: 21px;
 }
