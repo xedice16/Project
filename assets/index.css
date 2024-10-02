@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +10,143 @@
 .container {
     width: 85%;
     margin: 0 auto;
+}
+section {
+    padding-bottom: 80px;
+}
+header {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 21px;
+  padding-bottom: 30px;
+}
+header img {
+  width: 112px;
+  height: 66px;
+  padding-bottom: 70px;
+}
+nav {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+nav .date {
+    margin-right: 25px;
+    font-size: 20px;
+}
+.kino {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.kino.left {
+    width: 50%;
+}
+.kino .left h1 {
+    width: 100%;
+    font-size: 60px;
+    font-family: "Roboto Slab", serif;
+    line-height: 81.11px;
+    margin-bottom: 20px;
+}
+.kino.left p{
+    font-size: 20px;
+    width: 414px;
+    height: 62px;
+    line-height: 30px;
+}
+.kino .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.kino .right img {
+    width: 304px;
+    height: 356px;
+}
+ .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.bottom .items {
+    border: 1px solid #1d4681;
+    border-radius: 4px;
+    background-color: #1d4681;
+    color: #fff;
+    padding: 20px;
+    width: 450px;
+}
+.bottom p {
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32.5px;
+}
+ .bottom span {
+    width: 100%;
+    display: block;
+    text-align: end;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    line-height: 26px;
+}
+.card-head {
+      font-size: 2.5em;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 41px;
+    column-gap: 37px;
+    width: 90em;
+}
+
+.card {
+    max-width: 399px;
+    height: 18em;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+    /* padding: 10px; */
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    /* filter: drop-shadow(10px 0px 5px #808088); */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+.card-para {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4em;
+}
+.card_span {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 .list_items{
     width: 400px;
@@ -23,4 +161,83 @@
     font-size: 24px;
     line-height: 21px;
     margin-left: 15px;
+}
+@media (max-width:375px) {
+    nav .date {
+        font-size: 12px;
+    }
+    .kino {
+        display: block;
+    }
+    .kino .left {
+        width: 100%;
+    }
+    .kino .left h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .kino .left p {
+        margin-bottom: 20px;
+  }
+      .kino .right {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .kino .right img {
+        width: 142px;
+        height: 175px;
+    }
+    .bottom {
+        width: 300px;
+        margin-top: 20px;
+    }
+    .bottom p,span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-head {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        height: auto;
+    }
+}    
+@media screen and (min-width: 375px) and (max-width: 834px){
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* max-width: 231px; */
+        column-gap: 21px;
+        row-gap: 26px;
+    }
+
+    .card-head {
+        margin-left: 21px ;
+        margin-bottom: 73px;
+        font-size: 32px;
+    }
+
+    .card-h2 {
+        font-size: 17px;
+    }
+
+    .card-para {
+        font-size: 14px;
+    }
+    .card-head {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        height: auto;
+    }  
 }
