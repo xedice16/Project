@@ -6,6 +6,13 @@
     list-style: none;
     font-family: "Roboto Slab", serif;
 }
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+.list_items{
+    width: 400px;
+}
 .list_items h1{
     font-size: 32px;
     margin-bottom: 30px;
@@ -15,4 +22,5 @@
     list-style: disc;
     font-size: 14px;
     line-height: 21px;
+    margin-left: 15px;
 }
