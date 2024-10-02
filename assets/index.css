@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 * {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto Slab", serif;
 }
 .container {
     width: 85%;
     margin: 0 auto;
+}
+section {
+    padding-bottom: 80px;
 }
 header {
   width: 100%;
@@ -40,7 +44,7 @@ nav .date {
 }
 .kino .left h1 {
     width: 100%;
-    font-size: 69px;
+    font-size: 60px;
     font-family: "Roboto Slab", serif;
     line-height: 81.11px;
     margin-bottom: 20px;
@@ -54,7 +58,7 @@ nav .date {
 .kino .right {
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .kino .right img {
     width: 304px;
@@ -64,6 +68,7 @@ nav .date {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 .bottom .items {
     border: 1px solid #1d4681;
@@ -71,6 +76,7 @@ nav .date {
     background-color: #1d4681;
     color: #fff;
     padding: 20px;
+    width: 450px;
 }
 .bottom p {
     font-family: "Roboto Slab", serif;
@@ -86,56 +92,23 @@ nav .date {
     font-family: "Roboto", sans-serif;
     line-height: 26px;
 }
-
-@media (max-width:375px) {
-    nav .date {
-        font-size: 12px;
-    }
-    .kino {
-        display: block;
-    }
-    .kino .left {
-        width: 100%;
-    }
-    .kino .left h1 {
-        font-size: 40px;
-        line-height: 40px;
-    }
-    .kino .left p {
-        margin-bottom: 20px;
-  }
-      .kino .right {
-        width: 100%;
-    }
-    .bottom {
-        width: 300px;
-        margin-top: 20px;
-    }
-    .bottom p,span {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
 .card-head {
-    font-size: 2.5em;
+      font-size: 2.5em;
     text-align: left;
     margin-bottom: 40px;
-  }
-
+}
 .card-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-  }
-
+}
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 41px;
     column-gap: 37px;
     width: 90em;
-  }
+}
 
 .card {
     max-width: 399px;
@@ -147,39 +120,37 @@ nav .date {
     text-align: left;
     transition: transform 0.3s ease-in-out;
     /* filter: drop-shadow(10px 0px 5px #808088); */
-  }
+}
 
 .card img {
     width: 100%;
     height: auto;
     max-height: 150px;
     margin-bottom: 15px;
-   }
+}
 
 .card:hover {
     transform: translateY(-10px);
-   }
+}
 
 .card-h2 {
     font-size: 1.6em;
     margin-bottom: 10px;
-   }
+    margin-top: -20px;
+}
 
 .card-para {
-    font-family: Roboto, serif;
-    font-size: 1em;
-    color: black;
-    font-weight: 650;
-
-   }
-
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4em;
+}
 .card_span {
     display: flex;
     flex-direction: column;
     margin: 10px;
    }
-}
+
 @media screen and (min-width: 375px) and (max-width: 834px){
+
     .cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -210,267 +181,4 @@ nav .date {
         height: auto;
     }  
 }
- 
 
-
-
-
-.kurs h2{
-    font-size: 55px;
-    font-weight: 700;
-    font-family: "Roboto Slab", serif;
-    padding-left: 1.6em;
-    line-height: 55.76px;
-    padding-top: 80px;
-}
-article{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2em;
-    gap: 50px;
-    padding-left: 4em;
-}
-   .text1,.text2{
-    font-family: "Roboto", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: left;
-
-   }
-   .text1{
-    width: 70%;
-   }  
-   .text2{
-    width: 78%;
-   }
-   .man{
-    width: 314px;
-    height: 315px;
-    top: 1175px;
-    left: 973px;
-    padding-right:100px;
-   
-   }  
-   .about{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    justify-content: space-around;
-    align-items: center;
-    gap: 80px;
-    padding-left: 100px;
-    padding-right: 30%;
-   }
-   .icon{
-    width: 232px;
-    height: 203px;
-    top: 1619px;
-    left: 121px;
-
-   }
-   .tests{
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-   }
-   .test1,.test2,.test3{
-    width: 140px;
-    text-align: left;
-   }
-   .format h2{
-    font-family:"Roboto Slab", serif;
-    font-size: 55px;
-    font-weight: 700;
-    line-height: 55.76px;
-    text-align: left;
-    padding-top: 2em;
-    padding-left: 1.7em;
-   }
-   .info{
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 1em;
-    padding-left: 6em;
-    gap: 50px;
-   }
-   .info p{
-    font-family:"Roboto", sans-serif ;
-    font-size: 18px;
-    font-weight: 400;
-    padding-top: 10px;
-   }
-   .head{
-   color: #1E4681;
-   font-weight: 700;
-   font-size: 25px;
-   padding-top: 30px;
-   }
-   .info1{
-    width: 250px;
-   }
-   .info2{
-    width: 270px
-   }
-   .info3{
-    width: 250px;
-   }
-   @media screen and (min-width: 375px) and (max-width: 834px){
-    .kurs h2{
-       font-size: 32px;
-       font-weight: 700;
-       line-height: 32.44px;
-       text-align: left;
-      padding-left: 3em;
-    }
-    .text1,.text2{
-       font-size: 14px;
-       font-weight: 400;
-       line-height: 21px;
-       text-align: left;
-    }
-    .text1{
-        width: 350px;
-    }
-    .text2{
-        width: 370px;
-    }
-    .man{
-        width: 181.86px;
-        height: 182.44px;
-        top: 690.36px;
-        left: 563.53px;
-        padding-left: 200px;
-    }
-    .icon{
-        width: 134.37px;
-        height: 117.57px;
-        top: 947.51px;
-        left: 70.08px;
-    }
-    .test1,.test2,.test3{
-        font-size: 11px;
-        font-weight: 400;
-        line-height: 14.3px;
-        text-align: left;
-
-    }
-    .tests h3{
-       font-size: 15px;
-       font-weight: 700;
-       line-height: 19.5px;
-       text-align: left;
-
-    }
-    .format h2{
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 32.44px;
-        text-align: left;
-        padding-left: 3em;
-   }
-   .head{
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 19.5px;
-        text-align: left;
-   }
-   .info p{
-        font-size: 11px;
-        font-weight: 400;
-        line-height: 14.3px;
-        text-align: left;
-   }
- }
- @media (max-width:375px){
-    
-    article{
-        flex-direction: column;
-    
-    }
-    .text1,.text2{
-      
-       font-size: 12px;
-       font-weight: 400;
-       line-height: 18px;
-       text-align: left;
-
-    }
-    .text1{
-        width: 250px;
-    }
-    .text2{
-        width: 260px;
-    }
-    .man{
-        width: 170.55px;
-        height: 160.29px;
-        top: 918px;
-        left: 101px;
-        padding-left: 50px;
-    }
-    .icon{
-        display: none;
-    }
-    .tests h3{
-       font-size: 12px;
-       font-weight: 700;
-       line-height: 15.6px;
-       text-align: left;
-
-    }
-    .tests p{
-        font-size: 10px;
-        font-weight: 400;
-        line-height: 13px;
-        text-align: left;
-        padding-right: 50%;
-    }
-    .tests{
-       display: grid;
-       grid-template-columns: repeat(2,1fr);
-    }
-    .format h2{
-         
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 26.36px;
-        text-align: left;
-        padding-left: 3em;
-    }
-    .kurs h2{
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 26.36px;
-        text-align: left;
-        padding-left: 3em;
-    }
-    .info p{
-       font-size: 10px;
-       font-weight: 400;
-       line-height: 13px;
-       text-align: left;
-    }
-    .head{
-       font-size: 12px;
-       font-weight: 700;
-       line-height: 15.6px;
-       text-align: left
-    }
-    .info{
-        display: grid;
-        grid-template-rows: repeat(3,1fr);
-        justify-content: flex-start;
-    } 
-    .info1{
-        width: 200px;
-        padding-top: 30px;
-    }
-    .info2{
-        width: 150px;
-        padding-top: -30px;
-    }
-    .info3{
-        width: 150px;
-    }
- } 
