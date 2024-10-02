@@ -4,7 +4,8 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    /* font-family: Roboto, serif; */
+    list-style: none;
+    font-family: "Roboto Slab", serif;
 }
 .container {
     width: 85%;
@@ -146,6 +147,20 @@ nav .date {
     display: flex;
     flex-direction: column;
     margin: 10px;
+}
+.list_items{
+    width: 400px;
+}
+.list_items h1{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.list_items ul li{
+    font-family: "Roboto", sans-serif;
+    list-style: disc;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 15px;
 }
 @media (max-width:375px) {
     nav .date {
